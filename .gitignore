@@ -170,3 +170,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+.ruff_cache/
+.venv/
+.env.local
+.DS_Store
+.idea/
+.vscode/
