@@ -1,8 +1,12 @@
 """ORM model package.
 
-Models are added here from Phase 2 onwards. Importing this package is enough
-to register them with Base.metadata for Alembic autogenerate.
-"""
-# Phase 2 will add:
-# from app.infrastructure.db.models.session import OnboardingSessionModel
-# from app.infrastructure.db.models.message import ConversationMessageModel
+Register all ORM models so Alembic autogenerate sees them."""
+from app.infrastructure.db.models.domain_event import DomainEventModel
+from app.infrastructure.db.models.message import ConversationMessageModel
+from app.infrastructure.db.models.session import OnboardingSessionModel
+
+__all__ = [
+    "DomainEventModel",
+    "ConversationMessageModel",
+    "OnboardingSessionModel",
+]
